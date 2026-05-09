@@ -162,7 +162,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`overscroll-y-none ${orbitron.variable} ${rajdhani.variable} ${caveat.variable} ${gilroyNpTitle.variable}`}
+      className={`${orbitron.variable} ${rajdhani.variable} ${caveat.variable} ${gilroyNpTitle.variable}`}
       style={{
         backgroundColor: '#020617',
         backgroundImage: 'linear-gradient(135deg, #020617 0%, #0f172a 50%, #020617 100%)',
@@ -324,7 +324,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${gilroy.className} overscroll-y-none`}
+        className={`${gilroy.className}`}
         style={{
           minHeight: '100dvh',
           backgroundColor: '#020617',
