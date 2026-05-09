@@ -30,15 +30,33 @@ export async function GET(request: NextRequest) {
     }
 
     // Exchange code for access token
-    const tokenResponse = await exchangeCodeForToken(code);
+    let tokenResponse;
+    try {
+      tokenResponse = await exchangeCodeForToken(code);
+    } catch (e) {
+      console.error('Discord token exchange failed:', e);
+      return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=token_exchange`);
+    }
 
     // Get Discord user info
-    const discordUser = await getDiscordUser(tokenResponse.access_token);
+    let discordUser;
+    try {
+      discordUser = await getDiscordUser(tokenResponse.access_token);
+    } catch (e) {
+      console.error('Discord user fetch failed:', e);
+      return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=user_fetch`);
+    }
 
     // Connect to database
-    const client = await clientPromise;
-    const db = client.db('nopixel');
-    const usersCollection = db.collection('users');
+    let client, db, usersCollection;
+    try {
+      client = await clientPromise;
+      db = client.db('nopixel');
+      usersCollection = db.collection('users');
+    } catch (e) {
+      console.error('Database connection failed:', e);
+      return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=db_error`);
+    }
 
     // Check for existing guest session
     const currentSession = await getSession();
@@ -189,7 +207,6 @@ export async function GET(request: NextRequest) {
     return response;
   } catch (error) {
     console.error('Discord callback error:', error);
-    const errorMsg = error instanceof Error ? error.message : 'Unknown error';
-    return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=callback_failed&reason=${encodeURIComponent(errorMsg)}`);
+    return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=callback_failed`);
   }
 }
