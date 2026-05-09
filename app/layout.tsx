@@ -75,7 +75,7 @@ const caveat = Caveat({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nphacks.net'),
+  metadataBase: new URL('https://minigame.freakcloud.tk'),
   applicationName: 'NoPixel 4.0 Minigames',
   title: {
     default: "NoPixel 4.0 Minigames - Free Practice Simulator for GTA RP Hacking 🎮",
@@ -104,7 +104,7 @@ export const metadata: Metadata = {
     "NoPixel 4.0 hack trainer", "GTA RP skill improvement", "FiveM minigame trainer",
     "free NoPixel practice", "NoPixel tutorial", "GTA RP minigame guide"
   ],
-  authors: [{ name: "NoPixel Minigames", url: "https://nphacks.net" }],
+  authors: [{ name: "NoPixel Minigames", url: "https://minigame.freakcloud.tk" }],
   creator: "NoPixel Minigames",
   publisher: "NoPixel Minigames",
   formatDetection: {
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://nphacks.net',
+    url: 'https://minigame.freakcloud.tk',
     title: 'NoPixel 4.0 Minigames - Free GTA RP Hacking Practice Simulator 🎮',
     description: '⭐ Master NoPixel hacks FREE! Practice Thermite, Lockpick, VAR & more. Global leaderboards, expert strategies, mobile-friendly. The #1 GTA RP training simulator!',
     siteName: 'NoPixel 4.0 Minigames',
@@ -177,7 +177,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="color-scheme" content="dark" />
 
-        {/* Google AdSense Verification for nphacks.net */}
+        {/* Google AdSense Verification for minigame.freakcloud.tk */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8849653057967400"
@@ -215,9 +215,9 @@ export default function RootLayout({
                 "priceCurrency": "USD"
               },
               "description": "Free practice simulator for NoPixel 4.0 GTA RP hacking minigames. Master Thermite, Lockpick, Laundromat, Roof Running and more with real-time leaderboards.",
-              "url": "https://nphacks.net",
-              "image": "https://nphacks.net/opengraph-image",
-              "screenshot": "https://nphacks.net/opengraph-image",
+              "url": "https://minigame.freakcloud.tk",
+              "image": "https://minigame.freakcloud.tk/opengraph-image",
+              "screenshot": "https://minigame.freakcloud.tk/opengraph-image",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.8",
@@ -241,7 +241,7 @@ export default function RootLayout({
               "author": {
                 "@type": "Organization",
                 "name": "NoPixel Minigames",
-                "url": "https://nphacks.net"
+                "url": "https://minigame.freakcloud.tk"
               }
             })
           }}
@@ -304,19 +304,19 @@ export default function RootLayout({
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://nphacks.net"
+                  "item": "https://minigame.freakcloud.tk"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Guides",
-                  "item": "https://nphacks.net/guides"
+                  "item": "https://minigame.freakcloud.tk/guides"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Minigames",
-                  "item": "https://nphacks.net/puzzles/thermite"
+                  "item": "https://minigame.freakcloud.tk/puzzles/thermite"
                 }
               ]
             })

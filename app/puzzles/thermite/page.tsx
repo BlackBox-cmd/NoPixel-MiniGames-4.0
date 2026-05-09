@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🔥 Master NoPixel Thermite - FREE Maze Bank Hack Trainer",
     description: "⚡ Never fail Thermite again! Practice the hardest NoPixel hack with real mechanics. Join 1000+ criminals training daily.",
-    url: "https://nphacks.net/puzzles/thermite",
+    url: "https://minigame.freakcloud.tk/puzzles/thermite",
   },
   alternates: {
-    canonical: "https://nphacks.net/puzzles/thermite",
+    canonical: "https://minigame.freakcloud.tk/puzzles/thermite",
   },
 };
 

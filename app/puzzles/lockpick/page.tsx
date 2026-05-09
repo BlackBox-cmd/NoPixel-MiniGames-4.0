@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lockpick Practice - NoPixel 4.0",
     description: "Practice the Lockpick minigame from NoPixel 4.0. Master vehicle lockpicking mechanics.",
-    url: "https://nphacks.net/puzzles/lockpick",
+    url: "https://minigame.freakcloud.tk/puzzles/lockpick",
   },
   alternates: {
-    canonical: "https://nphacks.net/puzzles/lockpick",
+    canonical: "https://minigame.freakcloud.tk/puzzles/lockpick",
   },
 };
 

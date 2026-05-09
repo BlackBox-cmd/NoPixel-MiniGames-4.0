@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🎯 Daily Challenge - Earn Bonus XP Today",
     description: "Complete today's NoPixel minigame challenge for bonus XP. New challenge every day - build your streak!",
-    url: "https://nphacks.net/daily-challenge",
+    url: "https://minigame.freakcloud.tk/daily-challenge",
   },
   alternates: {
-    canonical: "https://nphacks.net/daily-challenge",
+    canonical: "https://minigame.freakcloud.tk/daily-challenge",
   },
 };
 
@@ -20,7 +20,7 @@ export default function DailyChallengePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0F1B21] via-[#1a2930] to-[#0F1B21]">
       {/* Main Challenge Section - Full viewport height */}
-      <div 
+      <div
         className="flex flex-col pt-16"
         style={{ minHeight: '100vh' }}
       >
@@ -41,7 +41,7 @@ export default function DailyChallengePage() {
               difficulty settings - this ensures every player worldwide gets the exact same challenge each day.
               Parameters like grid size, time limits, word counts, and target scores are varied to create fresh challenges.
             </p>
-            
+
             <h3 className="text-xl font-semibold text-white mt-6 mb-2">Streak Rewards</h3>
             <p>
               Build consecutive day streaks to earn increasing XP bonuses. The longer your streak, the more

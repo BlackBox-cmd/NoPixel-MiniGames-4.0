@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🏆 NoPixel 4.0 Leaderboards - Compete Globally",
     description: "View global rankings for all NoPixel minigames. See who holds the world records and track your progress on the leaderboards.",
-    url: "https://nphacks.net/leaderboards",
+    url: "https://minigame.freakcloud.tk/leaderboards",
   },
   alternates: {
-    canonical: "https://nphacks.net/leaderboards",
+    canonical: "https://minigame.freakcloud.tk/leaderboards",
   },
 };
 
@@ -28,7 +28,7 @@ export default function LeaderboardsPage() {
               Global Leaderboards
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Compete with players worldwide on our real-time leaderboards. Track your progress across 
+              Compete with players worldwide on our real-time leaderboards. Track your progress across
               all 7 NoPixel minigames, set personal records, and climb to the top of the rankings.
             </p>
           </div>

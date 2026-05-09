@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About NoPixel 4.0 Minigames Trainer',
     description: 'Free practice tools for the GTA RP community. Learn about our mission to help players master NoPixel minigames.',
-    url: 'https://nphacks.net/about',
+    url: 'https://minigame.freakcloud.tk/about',
   },
   alternates: {
-    canonical: 'https://nphacks.net/about',
+    canonical: 'https://minigame.freakcloud.tk/about',
   },
 };
 
