@@ -189,6 +189,7 @@ export async function GET(request: NextRequest) {
     return response;
   } catch (error) {
     console.error('Discord callback error:', error);
-    return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=callback_failed`);
+    const errorMsg = error instanceof Error ? error.message : 'Unknown error';
+    return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/?error=callback_failed&reason=${encodeURIComponent(errorMsg)}`);
   }
 }
