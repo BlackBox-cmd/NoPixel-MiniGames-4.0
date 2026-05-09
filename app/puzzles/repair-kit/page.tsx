@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RepairKit Practice - NoPixel 4.0",
     description: "Practice the RepairKit minigame from NoPixel 4.0. Master vehicle repair mechanics.",
-    url: "https://nphacks.net/puzzles/repair-kit",
+    url: "https://minigame.freakcloud.tk/puzzles/repair-kit",
   },
   alternates: {
-    canonical: "https://nphacks.net/puzzles/repair-kit",
+    canonical: "https://minigame.freakcloud.tk/puzzles/repair-kit",
   },
 };
 

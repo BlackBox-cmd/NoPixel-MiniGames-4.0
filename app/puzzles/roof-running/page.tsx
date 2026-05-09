@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🏃 Master NoPixel Roof Running - FREE Parkour Trainer",
     description: "💨 Nail every AC-Unit jump! Practice authentic NoPixel mechanics. Join criminals perfecting their house robbery timing.",
-    url: "https://nphacks.net/puzzles/roof-running",
+    url: "https://minigame.freakcloud.tk/puzzles/roof-running",
   },
   alternates: {
-    canonical: "https://nphacks.net/puzzles/roof-running",
+    canonical: "https://minigame.freakcloud.tk/puzzles/roof-running",
   },
 };
 

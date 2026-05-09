@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Laundromat Hack Practice - NoPixel 4.0",
     description: "Master the Laundromat safe hack from NoPixel 4.0. Practice the robbery minigame for free.",
-    url: "https://nphacks.net/puzzles/laundromat",
+    url: "https://minigame.freakcloud.tk/puzzles/laundromat",
   },
   alternates: {
-    canonical: "https://nphacks.net/puzzles/laundromat",
+    canonical: "https://minigame.freakcloud.tk/puzzles/laundromat",
   },
 };
 

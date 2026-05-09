@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-[#0F1B21] border-t border-[#54FFA4]/20 mt-auto">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#54FFA4]/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {currentYear} NPHacks.net - All rights reserved</p>
+          <p>© {currentYear} minigame.freakcloud.tk - All rights reserved</p>
           <p className="mt-2 md:mt-0">
             Not affiliated with NoPixel or Rockstar Games
           </p>

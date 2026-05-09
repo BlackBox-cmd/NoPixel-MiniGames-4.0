@@ -7,7 +7,7 @@
 
 // Primary site URL - used for SEO, canonical URLs, OG images, etc.
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://nphacks.net";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://minigame.freakcloud.tk";
 
 // Site name for metadata
 export const SITE_NAME = "NoPixel 4.0 Minigames";

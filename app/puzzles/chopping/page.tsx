@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chopping Practice - NoPixel 4.0",
     description: "Practice the Chopping minigame from NoPixel 4.0. Master vehicle chopping mechanics.",
-    url: "https://nphacks.net/puzzles/chopping",
+    url: "https://minigame.freakcloud.tk/puzzles/chopping",
   },
   alternates: {
-    canonical: "https://nphacks.net/puzzles/chopping",
+    canonical: "https://minigame.freakcloud.tk/puzzles/chopping",
   },
 };
 

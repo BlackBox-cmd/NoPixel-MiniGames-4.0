@@ -142,7 +142,7 @@ export default async function Image() {
             •
           </div>
           <div style={{ fontSize: '20px', fontFamily: 'sans-serif', color: '#54FFA4' }}>
-            nphacks.net
+            minigame.freakcloud.tk
           </div>
         </div>
       </div>
