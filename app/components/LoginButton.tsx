@@ -170,10 +170,17 @@ export default function LoginButton() {
               )}
             </div>
 
-            {/* Username */}
-            <span className="font-medium hidden sm:block">
-              {user.displayName || user.username}
-            </span>
+            {/* Username / Display Name */}
+            <div className="hidden sm:flex sm:flex-col sm:items-start sm:justify-center">
+              <span className="font-medium leading-none">
+                {user.displayName || user.username}
+              </span>
+              {(user.displayName && user.displayName !== user.username) && (
+                <span className={`text-[10px] leading-none mt-1 ${isGuest ? 'text-gray-400' : 'text-[#54FFA4]/80'}`}>
+                  @{user.username}
+                </span>
+              )}
+            </div>
 
             {/* Dropdown Arrow */}
             <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''} ${isGuest ? 'text-gray-400' : 'text-[#54FFA4]'}`} />
@@ -186,9 +193,14 @@ export default function LoginButton() {
               <div className={`px-5 py-4 border-b-2 ${isGuest ? 'border-slate-700/50 bg-slate-800/20' : 'border-[#54FFA4]/20 bg-[#54FFA4]/5'}`}>
                 <div className="flex items-start justify-between mb-2">
                   <div>
-                    <div className="text-white font-bold text-lg">
+                    <div className="text-white font-bold text-lg leading-tight">
                       {user.displayName || user.username}
                     </div>
+                    {(user.displayName && user.displayName !== user.username) && (
+                      <div className="text-sm text-gray-300 font-medium mb-1">
+                        @{user.username}
+                      </div>
+                    )}
                     <div className="text-xs text-gray-400">
                       {isGuest ? 'Stats not permanently saved' : 'Verified Agent'}
                     </div>
