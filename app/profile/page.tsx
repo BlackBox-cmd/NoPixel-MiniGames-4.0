@@ -341,9 +341,14 @@ export default function ProfilePage() {
 
             {/* Profile Info */}
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl font-bold text-white mb-2">
+              <h1 className="text-4xl font-bold text-white mb-1">
                 {stats.user.displayName || stats.user.username}
               </h1>
+              {(stats.user.displayName && stats.user.displayName !== stats.user.username) && (
+                <div className="text-xl text-gray-300 font-medium mb-2">
+                  @{stats.user.username}
+                </div>
+              )}
               <p className="text-gray-400 mb-4">
                 Member since {new Date(stats.user.joinedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
               </p>

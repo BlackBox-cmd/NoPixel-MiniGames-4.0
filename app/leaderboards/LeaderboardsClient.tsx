@@ -561,7 +561,9 @@ export default function LeaderboardsClient() {
                                   <span className="text-xs bg-[#54FFA4]/20 text-[#54FFA4] px-2 py-0.5 rounded-full font-semibold">You</span>
                                 )}
                               </div>
-                              <div className="text-gray-400 text-sm">@{entry.username}</div>
+                              {(entry.displayName && entry.displayName !== entry.username) && (
+                                <div className="text-gray-400 text-sm">@{entry.username}</div>
+                              )}
                             </div>
                             {entry.isGuest && (
                               <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 self-center">GUEST</span>
@@ -620,7 +622,9 @@ export default function LeaderboardsClient() {
                                   )}
                                   <span className="text-xs bg-[#54FFA4]/20 text-[#54FFA4] px-2 py-0.5 rounded-full font-semibold">You</span>
                                 </div>
-                                <div className="text-gray-400 text-sm">@{userRank.username}</div>
+                                {(userRank.displayName && userRank.displayName !== userRank.username) && (
+                                  <div className="text-gray-400 text-sm">@{userRank.username}</div>
+                                )}
                               </div>
                             </div>
 

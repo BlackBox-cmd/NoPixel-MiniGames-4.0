@@ -187,6 +187,7 @@ export interface UserSession {
 export interface DiscordUser {
   id: string;
   username: string;
+  global_name?: string | null;
   discriminator: string;
   avatar: string | null;
   email?: string;

@@ -88,6 +88,7 @@ export async function GET(request: NextRequest) {
             discriminator: discordUser.discriminator,
             avatar: getDiscordAvatarUrl(discordUser.id, discordUser.avatar),
             email: discordUser.email,
+            displayName: discordUser.global_name || discordUser.username,
             lastSeenAt: now,
             updatedAt: now,
           },
@@ -107,7 +108,7 @@ export async function GET(request: NextRequest) {
             discriminator: discordUser.discriminator,
             avatar: getDiscordAvatarUrl(discordUser.id, discordUser.avatar),
             email: discordUser.email,
-            displayName: discordUser.username, // Set default display name
+            displayName: discordUser.global_name || discordUser.username, // Set default display name
             verified: true, // Now verified
             updatedAt: now,
             lastSeenAt: now,
@@ -130,7 +131,7 @@ export async function GET(request: NextRequest) {
         avatar: getDiscordAvatarUrl(discordUser.id, discordUser.avatar),
         email: discordUser.email,
         
-        displayName: discordUser.username,
+        displayName: discordUser.global_name || discordUser.username,
         bio: '',
         joinedAt: now,
         lastSeenAt: now,
